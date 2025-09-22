@@ -8,6 +8,43 @@
     margin-top: 45px;
 }
 
+@media (min-width: 1440px) and (max-width: 1649px) {
+    .image img {
+        margin-left: 30px;  /* maintain original left margin */
+        margin-top: 45px;
+        max-width: 700px;
+        width: 85%;
+    }
+}
+
+@media (min-width: 1441px) {
+    .content button {
+        width: 120px;
+        white-space: nowrap;
+    }
+}
+
+@media (min-width: 1600px) {
+    .content button {
+        width: 120px;
+        white-space: nowrap;
+    }
+}
+
+@media (min-width: 1650px) {
+    .main-container .image {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .main-container .image img {
+        margin: 45px auto 0;
+        max-width: 700px;
+        width: 85%;
+    }
+}
+
 *{
     padding: 0;
     margin: 0;
@@ -283,7 +320,7 @@ section{
 }
 
 .content button{
-    width: 19%;
+    width: 130px;  /* Smaller fixed width */
     height: 6.5vh;
     margin-top: 25px;
     background-color: rgb(154, 131, 101);
@@ -294,6 +331,9 @@ section{
     font-weight: 700;
     border-radius: 5px;
     transition: 0.2s linear;
+    padding: 5px 15px;
+    white-space: nowrap;
+    display: inline-block;
 }
 
 .content button:hover{
