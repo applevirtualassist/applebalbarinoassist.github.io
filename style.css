@@ -1,16 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700;800&display=swap');
 .image img {
-    width: 85%;      /* image will take full width of its container */
-    height: auto;     /* height adjusts automatically to maintain aspect ratio */
-    max-width: 700px; /* optional: prevents it from growing too large */
-    display: block;   /* removes inline spacing below image */
+    width: 85%;      
+    height: auto;     
+    max-width: 700px; 
+    display: block;   
     margin-left: 30px;
     margin-top: 45px;
 }
 
 @media (min-width: 1440px) and (max-width: 1649px) {
     .image img {
-        margin-left: 30px;  /* maintain original left margin */
+        margin-left: 30px;  
         margin-top: 45px;
         max-width: 700px;
         width: 85%;
@@ -320,7 +320,7 @@ section{
 }
 
 .content button{
-    width: 130px;  /* Smaller fixed width */
+    width: 140px;  /* Smaller fixed width */
     height: 6.5vh;
     margin-top: 25px;
     background-color: rgb(154, 131, 101);
@@ -333,8 +333,12 @@ section{
     transition: 0.2s linear;
     padding: 5px 15px;
     white-space: nowrap;
-    display: inline-block;
+    display: flex;            /* make button a flex container */
+    justify-content: center;  /* center text horizontally */
+    align-items: center;      /* center text vertically */
+    text-align: center;       /* fallback */
 }
+
 
 .content button:hover{
     scale: 1.1;
@@ -712,17 +716,16 @@ section{
         font-size: 1.6rem;
     }
 
-    .main-container .content .btn {
+    .main-container .content {
         display: flex;
-        justify-content: center;
-        margin-top: 15px;
+        flex-direction: column;   /* stack elements vertically */
+        align-items: center;      /* center everything horizontally */
     }
 
-    .main-container .content .btn button {
-        width: auto;
-        min-width: 160px;
-        padding: 12px 25px;
-        font-size: 1rem;
+    .main-container .content button {
+        margin: 10px 5px 0 5px;   /* small spacing between buttons */
+        width: auto;              /* let them size naturally */
+        min-width: 150px;         /* optional min width */
     }
 
     .nav-container .links {
