@@ -61,7 +61,7 @@
         </section>
         <!-- ABOUT ME SECTION -->
         <section id="about" class="about-section">
-          <div class="about-container" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="100">
+          <div class="about-container" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="100">
             <!-- Left: Image -->
             <div class="about-image">
               <img src="image1.png" alt="Your photo" />
@@ -94,7 +94,7 @@
    </div>
  </section>
     <section id="skills" class="skills-section">
-        <div class="skills-heading" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="100">
+        <div class="skills-heading" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="0">
             <h2>Skills</h2>
         </div>
     <div class="skills-grid">
@@ -173,25 +173,28 @@
     </div>
   </div>
 </section>
-    <div id="contact-me" class="contact-me" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="100">
-  <p><b>Contact Me</b>.</p>
-  <p>Email: appleaejiemarieb@gmail.com</p>
-  <p>Phone: +63 993 985 6343</p>
-  <div class="social-links">
-    <a href="https://www.linkedin.com/in/apple-balbarino/" target="_blank">
-      <i class="fab fa-linkedin"></i>
-    </a>
-    <a href="https://www.facebook.com/apple.balbarino.54" target="_blank">
-      <i class="fab fa-facebook"></i>
-    </a>
+    <section id="contact-me" class="contact-me-section">
+  <div class="contact-me" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="100">
+    <h2>Contact Me</h2>
+    <p>Email: appleaejiemarieb@gmail.com</p>
+    <p>Phone: +63 993 985 6343</p>
+    <div class="social-links">
+      <a href="https://www.linkedin.com/in/apple-balbarino/" target="_blank">
+        <i class="fab fa-linkedin"></i>
+      </a>
+      <a href="https://www.facebook.com/apple.balbarino.54" target="_blank">
+        <i class="fab fa-facebook"></i>
+      </a>
+    </div>
   </div>
-</div>
+</section>
         <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
         <script>
         AOS.init({
-        offset: 0,
-        once: true, // <- This makes animations happen only once
-  });
+        offset: 200,   // triggers animation 200px before element enters viewport
+        once: true,
+        duration: 1000
+    });
 </script>
         </script>
         <script>

@@ -193,11 +193,15 @@ nav {
     background-color: rgb(154, 131, 101);
 }
 
-section{
-    width: 100%;
-    height: auto;        /* instead of 90vh */
-    min-height: 90vh;    /* optional: keep it visually big but allow scrolling */
-    scroll-margin-top: 10vh; /* same as nav height */
+section {
+  width: 100%;
+  height: auto;
+  min-height: 90vh;
+  padding: 5rem 0;
+}
+
+section:first-of-type {
+  padding-top: 0rem; /* or 0 if you only want nav spacing */
 }
 
 .main-container{
@@ -220,6 +224,7 @@ section{
     min-height: 100px;
     margin-left: -40px; /* Move content to the left */
 }
+
 
 .content h1{
     font-size: clamp(2rem, 2rem + 5vw, 3rem);
@@ -320,23 +325,23 @@ section{
 }
 
 .content button{
-    width: 140px;  /* Smaller fixed width */
-    height: 6.5vh;
+    width: 140px;
+    height: 47px; /* fixed size */
     margin-top: 25px;
     background-color: rgb(154, 131, 101);
     color: white;
     border: none;
     outline: none;
-    font-size: 90%;
+    font-size: 0.9rem;
     font-weight: 700;
     border-radius: 5px;
     transition: 0.2s linear;
     padding: 5px 15px;
     white-space: nowrap;
-    display: flex;            /* make button a flex container */
-    justify-content: center;  /* center text horizontally */
-    align-items: center;      /* center text vertically */
-    text-align: center;       /* fallback */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 
 
@@ -356,7 +361,7 @@ section{
   margin: 0 auto;
   display: flex;
   align-items: center;
-  gap: 40px;
+  gap: 3vw;
   flex-wrap: wrap;
 }
 
@@ -611,6 +616,11 @@ section{
   padding: 5px;
   transform: scale(1.2);
 }
+#contact-me {
+    min-height: auto;  
+    height: auto;
+    padding-bottom: 40px; 
+}
 @media (max-width: 1100px) {
   .services-container { grid-template-columns: 1fr; } /* text on top, cards underneath */
   .services-grid { grid-template-columns: repeat(2, 1fr); }
@@ -767,5 +777,9 @@ section{
         max-height: 300px;
     }
     
-    
-
+/* Target QHD and up */
+@media (min-width: 2560px) {
+  body {
+    zoom: 1.25;   /* Scale up content by 25% */
+  }
+}
